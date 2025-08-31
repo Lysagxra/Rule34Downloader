@@ -2,7 +2,7 @@
 
 > A Python-based tool for downloading hanime from rule34.xxx. This tool reads a list of URLs from a file and processes the downloads accordingly.
 
-![Demo]()
+![Demo](https://github.com/Lysagxra/Rule34Downloader/blob/1bbdafa235a84521a57adddeedf37b736a6c77fe/misc/Demo.gif)
 
 ## Features
 
@@ -30,9 +30,9 @@ project-root/
 │ ├── file_utils.py            # Utilities for managing file operations
 │ ├── general_utils.py         # Miscellaneous utility functions
 │ ├── progress_utils           # Utilities for displaying and managing progress
-│ ├── rule34_utils             # Utilities for interacting with Rule34
+│ ├── rule34_utils             # Utilities for interacting with rule34.xxx
 │ └── url_utils                # Utilities for handling URL manipulation
-├── downloader.py              # Module for initiating downloads from specified rule34.xxx
+├── downloader.py              # Module for initiating downloads from rule34.xxx
 ├── main.py                    # Main script to run the downloader
 └── URLs.txt                   # Text file listing album URLs to be downloaded
 ```
@@ -68,9 +68,9 @@ To batch download from multiple URLs, you can use the `main.py` script. This scr
 - Example of `URLs.txt`:
 
 ```
-https://rule34.xxx/index.php?page=post&s=list&tags=gumi_arts&pid=84
-https://rule34.xxx/index.php?page=post&s=list&tags=wodstudio&pid=0
 https://rule34.xxx/index.php?page=post&s=list&tags=jennieart02
+https://rule34.xxx/index.php?page=post&s=list&tags=wodstudio&pid=0
+https://rule34.xxx/index.php?page=post&s=list&tags=gumi_arts&pid=84
 ```
 
 - Ensure that each URL is on its own line without any extra spaces.
