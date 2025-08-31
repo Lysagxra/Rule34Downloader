@@ -74,7 +74,14 @@ https://rule34.xxx/index.php?page=post&s=list&tags=gumi_arts&pid=84
 ```
 
 - Ensure that each URL is on its own line without any extra spaces.
-- You can add as many URLs as you need, following the same format.
+- You can add as many URLs as you need, following this format:
+
+```bash
+https://rule34.xxx/index.php?page=post&s=list&tags=<tag>&pid=<pid>
+```
+
+- If a `pid` is not present, or is set to 0, all files will be downloaded from all pages matching the given tag.
+- If a `pid` is present, the program will start downloading from the page corresponding to that `pid`, ignoring any previous pages.
 
 2. Run the batch download script:
 
@@ -82,7 +89,7 @@ https://rule34.xxx/index.php?page=post&s=list&tags=gumi_arts&pid=84
 python3 main.py
 ```
 
-3. The downloaded files will be saved in the `Downloads` directory.
+3. The downloaded files will be saved in the `Downloads` directory, organized into subfolders named `gifs`, `pics`, and `videos`, based on their format.
 
 ## Logging
 
