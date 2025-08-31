@@ -9,7 +9,6 @@ Usage:
 """
 
 import asyncio
-import logging
 import random
 import sys
 
@@ -134,10 +133,6 @@ async def process_tag_download(url: str) -> None:
 
 async def main() -> None:
     """Run the script."""
-    if len(sys.argv) != 2:
-        logging.warning("Usage: python script.py <url>")
-        sys.exit(1)
-
     clear_terminal()
     url = sys.argv[1]
     await process_tag_download(url)
