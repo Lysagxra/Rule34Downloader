@@ -28,14 +28,15 @@ async def process_urls(urls: list[str]) -> None:
 
 
 async def main() -> None:
-    """Run the script.
-
-    Reads URLs from a file, processes the downloads for each URL, and clears
-    the file after the processing is complete.
-    """
+    """Run the script."""
+    # Clear the terminal
     clear_terminal()
-    urls = read_file(URLS_FILE)
+
+    # Read and process URLs, ignoring empty lines
+    urls = [url.strip() for url in read_file(URLS_FILE) if url.strip()]
     await process_urls(urls)
+
+    # Clear URLs file
     write_file(URLS_FILE)
 
 

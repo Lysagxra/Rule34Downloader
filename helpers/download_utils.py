@@ -85,7 +85,7 @@ async def save_file_with_progress(
 
             except asyncio.TimeoutError:
                 if attempt < retries - 1:
-                    delay = 2 ** (attempt + 1) + random.uniform(0, 1)  # noqa: S311
+                    delay = 2 ** (attempt + 1) + random.uniform(1, 3)  # noqa: S311
                     await asyncio.sleep(delay)
 
             else:
