@@ -17,12 +17,12 @@ from bs4 import BeautifulSoup
 from rich.live import Live
 from rich.progress import Progress
 
-from helpers.config import TIMEOUT
-from helpers.download_utils import save_file_with_progress
-from helpers.file_utils import move_files
-from helpers.general_utils import clear_terminal, create_download_directory, fetch_page
-from helpers.progress_utils import create_progress_bar, create_progress_table
-from helpers.rule34_utils import generate_page_urls, get_download_links, get_tag_name
+from src.config import TIMEOUT
+from src.download_utils import save_file_with_progress
+from src.file_utils import create_download_directory, move_files
+from src.general_utils import clear_terminal, fetch_page
+from src.progress_utils import create_progress_bar, create_progress_table
+from src.rule34_utils import generate_page_urls, get_download_links, get_tag_name
 
 
 async def download_video_items(

@@ -1,8 +1,7 @@
 """Main module of the project.
 
-This module provides functionality for reading URLs from a file, processing
-them to download media content, and clearing the file after the process is
-complete.
+This module provides functionality for reading URLs from a file, processing them to
+download media content, and clearing the file after the process is complete.
 
 Usage:
     Ensure that a file named 'URLs.txt' is present in the same directory as
@@ -14,11 +13,12 @@ Usage:
 """
 
 import asyncio
+import sys
 
 from downloader import process_tag_download
-from helpers.config import URLS_FILE
-from helpers.file_utils import read_file, write_file
-from helpers.general_utils import clear_terminal
+from src.config import URLS_FILE
+from src.file_utils import read_file, write_file
+from src.general_utils import clear_terminal
 
 
 async def process_urls(urls: list[str]) -> None:
@@ -41,4 +41,8 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+
+    except KeyboardInterrupt:
+        sys.exit(1)
