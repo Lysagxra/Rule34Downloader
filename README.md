@@ -2,7 +2,7 @@
 
 > A Python-based tool for downloading hanime from rule34.xxx. This tool reads a list of URLs from a file and processes the downloads accordingly.
 
-![Demo](https://github.com/Lysagxra/Rule34Downloader/blob/1bbdafa235a84521a57adddeedf37b736a6c77fe/misc/Demo.gif)
+![Demo](https://github.com/Lysagxra/Rule34Downloader/blob/66e57cd88fbbec617ba25f0f67c8fe8176c5a9bf/assets/demo.gif)
 
 ## Features
 
