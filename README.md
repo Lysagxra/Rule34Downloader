@@ -20,7 +20,9 @@
 - `requests` - for HTTP requests
 - `rich` - for progress display in the terminal
 
-## Directory Structure
+<details>
+
+<summary>Show directory structure</summary>
 
 ```
 project-root/
@@ -36,6 +38,8 @@ project-root/
 ├── main.py                    # Main script to run the downloader
 └── URLs.txt                   # Text file listing album URLs to be downloaded
 ```
+
+</details>
 
 ## Installation
 
