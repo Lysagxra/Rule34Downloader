@@ -26,7 +26,7 @@
 
 ```
 project-root/
-├── helpers/
+├── src/
 │ ├── config.py                # Manages constants and settings used across the project
 │ ├── download_utils.py        # Utilities for managing the download process
 │ ├── file_utils.py            # Utilities for managing file operations
